@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset Styles */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Legend Styles */
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+}
+
+/* Input Styles */
+input[type="number"],
+input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: calc(100% - 12px);
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Grid Layout for Checkboxes */
+fieldset.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for brands */
+    gap: 10px;
+}
+
+fieldset.type-grid,
+fieldset.cpu-grid,
+fieldset.gpu-grid,
+fieldset.os-grid,
+fieldset.storage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for other categories */
+    gap: 10px;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.predicted-price {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}

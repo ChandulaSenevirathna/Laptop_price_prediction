@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Prediction Form</title>
+    <link rel="stylesheet" href="../static/css/laptop.css">
+</head>
+<body>
+    <h1>Pricing Prediction Form</h1>
+    <form action="/submit" method="post">
+        <!-- Numeric Inputs -->
+        <label for="inches">Diagonal Length (Inch):</label>
+        <input type="number" id="inches" name="inches" step="0.1" required><br>
+
+        <label for="ram">Ram (GB):</label>
+        <input type="number" id="ram" name="ram" step="1" required><br>
+
+        <label for="weight">Weight (Kg):</label>
+        <input type="number" id="weight" name="weight" step="0.01" required><br>
+
+        <label for="cpu_freq">CPU Frequency (GHz):</label>
+        <input type="number" id="cpu_freq" name="cpu_freq" step="0.1" required><br>
+
+        <label for="memory_amount">Storage Capacity (MB):</label>
+        <input type="number" id="memory_amount" name="memory_amount" step="1" required><br>
+
+         <!-- Storage Options -->
+         <fieldset class="storage-grid">
+            <legend>Storage</legend>
+            <label for="flash"><input type="checkbox" id="flash" name="flash" value="1">Flash</label>
+            <label for="hdd"><input type="checkbox" id="hdd" name="hdd" value="1">HDD</label>
+            <label for="hybrid"><input type="checkbox" id="hybrid" name="hybrid" value="1">Hybrid</label>
+            <label for="ssd"><input type="checkbox" id="ssd" name="ssd" value="1">SSD</label>
+        </fieldset>
+
+        <!-- Brand Options -->
+        <fieldset class="brand-grid">
+            <legend>Brands</legend>
+            <label for="acer"><input type="checkbox" id="acer" name="acer" value="1">Acer</label>
+            <label for="apple"><input type="checkbox" id="apple" name="apple" value="1">Apple</label>
+            <label for="asus"><input type="checkbox" id="asus" name="asus" value="1">Asus</label>
+            <label for="chuwi"><input type="checkbox" id="chuwi" name="chuwi" value="1">Chuwi</label>
+            <label for="dell"><input type="checkbox" id="dell" name="dell" value="1">Dell</label>
+            <label for="fujitsu"><input type="checkbox" id="fujitsu" name="fujitsu" value="1">Fujitsu</label>
+            <label for="google"><input type="checkbox" id="google" name="google" value="1">Google</label>
+            <label for="hp"><input type="checkbox" id="hp" name="hp" value="1">HP</label>
+            <label for="huawei"><input type="checkbox" id="huawei" name="huawei" value="1">Huawei</label>
+            <label for="lg"><input type="checkbox" id="lg" name="lg" value="1">LG</label>
+            <label for="lenovo"><input type="checkbox" id="lenovo" name="lenovo" value="1">Lenovo</label>
+            <label for="msi"><input type="checkbox" id="msi" name="msi" value="1">MSI</label>
+            <label for="mediacom"><input type="checkbox" id="mediacom" name="mediacom" value="1">Mediacom</label>
+            <label for="microsoft"><input type="checkbox" id="microsoft" name="microsoft" value="1">Microsoft</label>
+            <label for="razer"><input type="checkbox" id="razer" name="razer" value="1">Razer</label>
+            <label for="samsung"><input type="checkbox" id="samsung" name="samsung" value="1">Samsung</label>
+            <label for="toshiba"><input type="checkbox" id="toshiba" name="toshiba" value="1">Toshiba</label>
+            <label for="vero"><input type="checkbox" id="vero" name="vero" value="1">Vero</label>
+            <label for="xiaomi"><input type="checkbox" id="xiaomi" name="xiaomi" value="1">Xiaomi</label>
+        </fieldset>
+
+        <!-- Type Options -->
+        <fieldset class="type-grid">
+            <legend>Type</legend>
+            <label for="convertible"><input type="checkbox" id="convertible" name="convertible" value="1">2 in 1 Convertible</label>
+            <label for="gaming"><input type="checkbox" id="gaming" name="gaming" value="1">Gaming</label>
+            <label for="netbook"><input type="checkbox" id="netbook" name="netbook" value="1">Netbook</label>
+            <label for="notebook"><input type="checkbox" id="notebook" name="notebook" value="1">Notebook</label>
+            <label for="ultrabook"><input type="checkbox" id="ultrabook" name="ultrabook" value="1">Ultrabook</label>
+            <label for="workstation"><input type="checkbox" id="workstation" name="workstation" value="1">Workstation</label>
+        </fieldset>
+
+        <!-- CPU Options -->
+        <fieldset class="cpu-grid">
+            <legend>CPU</legend>
+            <label for="amd_cpu"><input type="checkbox" id="amd_cpu" name="amd_cpu" value="1">AMD CPU</label>
+            <label for="intel_cpu"><input type="checkbox" id="intel_cpu" name="intel_cpu" value="1">Intel CPU</label>
+            <label for="samsung_cpu"><input type="checkbox" id="samsung_cpu" name="samsung_cpu" value="1">Samsung CPU</label>
+        </fieldset>
+
+        <!-- GPU Options -->
+        <fieldset class="gpu-grid">
+            <legend>GPU</legend>
+            <label for="amd_gpu"><input type="checkbox" id="amd_gpu" name="amd_gpu" value="1">AMD GPU</label>
+            <label for="arm_gpu"><input type="checkbox" id="arm_gpu" name="arm_gpu" value="1">ARM GPU</label>
+            <label for="intel_gpu"><input type="checkbox" id="intel_gpu" name="intel_gpu" value="1">Intel GPU</label>
+            <label for="nvidia_gpu"><input type="checkbox" id="nvidia_gpu" name="nvidia_gpu" value="1">Nvidia GPU</label>
+        </fieldset>
+
+        <!-- OS Options -->
+        <fieldset class="os-grid">
+            <legend>Operating System</legend>
+            <label for="android"><input type="checkbox" id="android" name="android" value="1">Android</label>
+            <label for="chrome_os"><input type="checkbox" id="chrome_os" name="chrome_os" value="1">Chrome OS</label>
+            <label for="linux"><input type="checkbox" id="linux" name="linux" value="1">Linux</label>
+            <label for="mac_os"><input type="checkbox" id="mac_os" name="mac_os" value="1">Mac OS X</label>
+            <label for="no_os"><input type="checkbox" id="no_os" name="no_os" value="1">No OS</label>
+            <label for="windows_10"><input type="checkbox" id="windows_10" name="windows_10" value="1">Windows 10</label>
+            <label for="windows_10_s"><input type="checkbox" id="windows_10_s" name="windows_10_s" value="1">Windows 10 S</label>
+            <label for="windows_7"><input type="checkbox" id="windows_7" name="windows_7" value="1">Windows 7</label>
+            <label for="macos"><input type="checkbox" id="macos" name="macos" value="1">macOS</label>
+        </fieldset>
+
+        
+        <!-- Predicted Price -->
+        <p class="predicted-price">Predicted Price: {{predicted_price}}</p>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
